@@ -101,12 +101,21 @@
   .calendar-month-label {
     padding: $base_padding 0;
     color: $text-secondary;
+    background-color: transparent;
     font-weight: bold;
     text-align: center;
     text-shadow: none;
     @include fontsize($font_size + 1);
 
     // &:focus {}
+  }
+
+  //day of week heading
+  .calendar-day-heading {
+    margin-top: 1em;
+    color: $text-disabled;
+    background-color: transparent;
+    @include fontsize($font_size - 1);
   }
 
   // prev/next month icons
@@ -141,6 +150,7 @@
     margin: 2px !important;
     border-radius: $circular_radius;
     color: $text-secondary;
+    background-color: transparent;
     border: none;
     font-feature-settings: "tnum";
 
@@ -155,12 +165,6 @@
       border: none !important; //avoid jumparound due to today
       box-shadow: none !important;
       outline: none !important;
-    }
-
-    &.calendar-day-heading {  //day of week heading
-      margin-top: 1em;
-      color: $text-disabled;
-      @include fontsize($font_size - 1);
     }
   }
 
