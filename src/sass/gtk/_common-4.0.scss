@@ -2956,7 +2956,7 @@ switch {
   }
 
   > slider {
-    transition: all $duration $ease-out;
+    //transition: all $duration $ease-out;
     min-width: $small-size - 6px;
     min-height: $small-size - 6px;
     margin: $space-size / 2;
@@ -5061,7 +5061,7 @@ window {
     }
 
     &:hover, &:active {
-      color: if($colorscheme != 'dracula', white, rgba(black, 0.5));
+      color: rgba(black, 0.5);
     }
 
     &:backdrop {
